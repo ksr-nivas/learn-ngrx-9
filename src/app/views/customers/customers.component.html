@@ -1,0 +1,8 @@
+<h4>List of Customers</h4>
+
+<ul class="customers">
+    <li *ngFor="let customer of customers | async; let i = index">
+        <span>{{i+1}}. </span>{{customer.name}}
+        <button style="float: right; background-color: rgb(155, 53, 53); font-size: 1rem;" (click)="removeCustomer(i)">&times;</button>
+    </li>
+</ul>
