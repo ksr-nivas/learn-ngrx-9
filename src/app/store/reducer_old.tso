@@ -1,0 +1,31 @@
+// import { ActionTypes, Actions_Union } from './actions';
+
+// export const initialState = {
+//     items: [],
+//     cart: []
+// }
+
+// export function ShopReducer(state = initialState, action: Actions_Union) {
+//     switch (action.type) {
+//         case ActionTypes.LOAD_SUCCESS:
+//             return {
+//                 ...state,
+//                 items: [...action.payload]
+//             }
+        
+//         case ActionTypes.ADD_TO_CART:
+//             return {
+//                 ...state,
+//                 cart: [...state.cart, action.payload]
+//             }
+
+//         case ActionTypes.REMOVE_FROM_CART:
+//             return {
+//                 ...state,
+//                 cart: [...state.cart.filter(item => item.title !== action.payload.title)]
+//             }
+
+//         default:
+//             return state;
+//     }
+// }

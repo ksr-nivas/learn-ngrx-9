@@ -1,0 +1,14 @@
+<div class="book-container">
+    <div class="card book-card col s12 m6 l3" *ngFor="let book of books">
+        <div class="card-image cursor" (click)="bookDetails(book)">
+            <img [src]="book.volumeInfo?.imageLinks?.smallThumbnail" alt="Book Image" height="200"/>
+        </div>
+        <div class="book-title valign-wrapper center-align cursor" (click)="bookDetails(book)">
+            <strong>{{book.volumeInfo.title}}</strong>
+            <small style="text-align: left;">{{book.volumeInfo.description.substr(0, 50)}}...</small>
+        </div>
+        <div class="card-action">
+            <a href="#" class="waves-effect waves-light btn action-btn" (click)="addToCart(book)">Buy</a>
+        </div>
+    </div>
+</div>

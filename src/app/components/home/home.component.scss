@@ -1,0 +1,28 @@
+.book-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-card {
+    width: 10rem;
+    height: 24rem;
+    margin: 1rem;
+}
+
+.book-title {
+    height: 5rem;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.action-btn {
+    width: 100%;
+}

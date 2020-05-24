@@ -1,0 +1,20 @@
+<div class="card horizontal" *ngIf="book" style="padding: 1rem;">
+    <div class="card-image">
+        <img [src]="book.volumeInfo?.imageLinks?.thumbnail">
+    </div>
+    <div class="card-stacked">
+        <div class="card-content" style="padding: 0; padding-left: 1rem;">
+            {{book.volumeInfo?.description}}
+        </div>
+        <div class="card-action">
+            <button class="btn waves-effect waves-light" style="margin-right: 0.8rem;" (click)="addToCart()">
+                Add to cart
+                <i class="material-icons right" style="line-height: 40px;">add_shopping_cart</i>
+            </button>
+            <button class="btn waves-effect waves-light" style="margin-right: 0.8rem;">
+                Buy Now
+                <i class="material-icons right" style="line-height: 40px;">call_made</i>
+            </button>
+        </div>
+    </div>
+</div>
